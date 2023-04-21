@@ -7,7 +7,8 @@
 .wrapper-content{
   display: flex;
   justify-content: space-between;
-  width: 700px;
+  flex-wrap: wrap-reverse;
+  width: 70%;
 }
 
 form{
@@ -20,6 +21,10 @@ input{
   margin: 5px 0;
 }
 
+input:first-child{
+  margin:0 0 5px;
+}
+
 .buttons-wrapper{
   display: flex;
   justify-content: space-between;
@@ -28,7 +33,7 @@ input{
 }
 
 button{
-  width: 70%;
+  width: 48%;
 }
 
 table{
@@ -48,4 +53,13 @@ th{
 
 th:first-child{
   min-width:20px;
+}
+
+th:last-child{
+  min-width: 200px;
+}
+
+td{
+  border: 1px solid grey;
+  padding: 5px;
 }
