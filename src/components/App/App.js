@@ -7,7 +7,8 @@ import './App.css';
 const initialValues = {
   userName: '',
   userSurname: '',
-  userSalary: ''
+  userSalary: '',
+  userHobby: ''
 }
 
 function App() {
@@ -68,25 +69,33 @@ function App() {
         <div>
         <form onSubmit={handleSubmitUser} onReset={handleCleanClick}>
             <CustomInput
-              placeholder="Write your name" 
+              placeholder="Write your name *" 
               handleChange={handleImputChange}
               value = {userData.userName}
               fieldName = 'userName'
             />
             
             <CustomInput 
-              placeholder="Write your surname" 
+              placeholder="Write your surname *" 
               handleChange={handleImputChange}
               value = {userData.userSurname}
               fieldName = 'userSurname'
             />
             
             <CustomInput 
-              placeholder="Write your salary" 
+              placeholder="Write your salary *" 
               handleChange={handleImputChange}
               value = {userData.userSalary}
               fieldName = 'userSalary'
-            />            
+            />    
+            
+            <CustomInput 
+              placeholder="Write your hobbies" 
+              handleChange={handleImputChange}
+              value = {userData.userHobby}
+              fieldName = 'userHobby'
+            />    
+
             <div className="buttons-wrapper">
                 <CustomButton type='reset' label='Clean'/>
                 

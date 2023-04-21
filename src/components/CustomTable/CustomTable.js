@@ -15,6 +15,7 @@ const CustomTable = ({
               <th>User Sername</th>
               <th>User Salary</th>
               <th>Actions</th>
+              <th>Hobby</th>
             </tr></thead>
             <tbody>              
                 {users.map((user, index) => (
@@ -23,6 +24,7 @@ const CustomTable = ({
                     <td>{user.userName}</td>
                     <td>{user.userSurname}</td>
                     <td>{user.userSalary}</td>
+                    <td>{user.userHobby}</td>
                     <td>
                         <div className='buttons-wrapper'>
                             <CustomButton
